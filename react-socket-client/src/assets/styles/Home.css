@@ -1,0 +1,29 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.container {
+  position: relative;
+  height: 100vh;
+  overflow-x: none;
+  overflow-y: hidden;
+  /* background-color: rgba(0, 255, 0, 0); */
+  display: grid;
+  grid-template: 1fr/1fr;
+  background-image: var(--gradient-23)
+}
+
+/* display class connected to animated countdown timer */
+.display {
+  position: absolute;
+  /* border: 12px solid orange; */
+  flex-direction: column;
+  bottom: 25px;
+  left: 10px;
+  width: 800px;
+  height: 400px;
+  color: white;
+  font-size: 48px;
+  justify-content: center;
+  align-items: flex-end;
+  filter: drop-shadow(5px 5px 4px black);
+}

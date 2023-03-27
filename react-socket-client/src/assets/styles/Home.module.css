@@ -1,0 +1,39 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* container holds the box for the question */
+body {
+    /* background: rgba(0, 0, 0, 0); */
+}
+
+
+.container {
+    position: relative;
+    height: 100vh;
+    overflow-x: none;
+    overflow-y: hidden;
+    display: grid;
+    grid-template: 1fr/1fr;
+}
+
+/* display class connected to animated countdown timer */
+.display {
+    position: absolute;
+    flex-direction: column;
+    top: 25px;
+    left: 10px;
+    width: 800px;
+    height: 250px;
+    padding: 15px;
+    color: white;
+    font-size: 48px;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: var(--gradient-23);
+    filter: drop-shadow(5px 5px 4px black);
+}
+
+.display h2 {
+    color: white;
+    font-size: 48px;
+}

@@ -1,0 +1,45 @@
+.background {
+    background-color: green;
+}
+
+/* overlay classes determine animated gradient */
+
+.overlay1 {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, hsl(241, 75%, 40%), hsl(224, 18%, 45%), hsl(251, 75%, 40%), hsl(220, 65%, 85%));
+    background-size: 300% 300%;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: gradient 65s ease infinite;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 1;
+}
+
+.overlay2 {
+    width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #83b0c2, orange, #b20a2c, rgb(113, 113, 165), pink);
+    background-size: 300% 300%;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: gradient 45s ease infinite;
+    mix-blend-mode: overlay;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    z-index: 1;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

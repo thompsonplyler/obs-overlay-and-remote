@@ -1,0 +1,23 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.gridItem {}
+
+.gridContainer {
+    margin: 0px;
+    display: grid;
+    justify-content: center;
+    background-image: var(--gradient-23);
+    height: 100vh;
+}
+
+.gridItem {
+    margin: 15px;
+}
+
+button {
+    color: var(--blue-6);
+    background-color: var(--blue-0);
+    border: 1px solid var(--blue-1);
+    text-shadow: 0 1px 0 var(--blue-2)
+}

@@ -1,0 +1,24 @@
+.arimo {
+    font-family: Arimo;
+}
+
+.red {
+    color: #cf4c4e;
+}
+
+.white {
+    color: white;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mask {
+    overflow: hidden;
+    position: relative;
+}
